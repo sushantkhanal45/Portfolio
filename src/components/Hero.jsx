@@ -88,7 +88,7 @@ const Hero = () => {
           <div className="mt-10 flex items-center gap-4">
             {/* GitHub */}
             <a
-              href="https://github.com/"
+              href="https://github.com/sushantkhanal45"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -99,7 +99,7 @@ const Hero = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/sushantkhanal45/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -110,7 +110,7 @@ const Hero = () => {
 
             {/* Email */}
             <a
-              href="mailto:your-email@example.com"
+              href="skkhanal45@gmail.com"
               aria-label="Email"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition duration-300 hover:border-blue-400 hover:text-blue-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:shadow-none dark:hover:border-blue-400/40 dark:hover:text-blue-400"
             >
