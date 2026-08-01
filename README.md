@@ -1,16 +1,61 @@
-# React + Vite
+Sushant Khanal | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React.js**, **Tailwind CSS**, and **Framer Motion**. It showcases my projects, technical skills, and frontend development work while providing an easy way for recruiters, collaborators, and potential clients to contact me.
 
-Currently, two official plugins are available:
+ 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> LINK HERE_left
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Modern and responsive user interface
+- Dark and light mode
+- Smooth scrolling navigation
+- Smooth animations using Framer Motion
+- Responsive design for desktop, tablet, and mobile
+- Project showcase
+- Technical skills section
+- EmailJS-powered contact form
+- GitHub, LinkedIn, and email links
+- Reusable React components
 
-## Expanding the ESLint configuration
+🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- EmailJS
+- Lucide React
+- React Icons
+
+📁 Project Structure
+
+```text
+sushant-portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
