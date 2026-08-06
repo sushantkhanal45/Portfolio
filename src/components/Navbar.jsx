@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {/* Resume */}
           <a
-            href="/resume.pdf"
+            href="/Sushant_Khanal_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="rounded-full border border-blue-500/50 px-5 py-2.5 text-sm font-semibold text-blue-600 transition hover:bg-blue-500 hover:text-white dark:text-blue-300"
