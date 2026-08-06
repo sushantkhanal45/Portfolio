@@ -18,9 +18,7 @@ const Navbar = () => {
       return savedTheme === "dark";
     }
 
-    return window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
   useEffect(() => {
@@ -52,7 +50,7 @@ const Navbar = () => {
           onClick={closeMenu}
           className="text-xl font-bold tracking-tight text-slate-950 dark:text-white"
         >
-          Sushant<span className="text-blue-500">.</span>
+          Sushant<span className="text-blue-500"></span>
         </a>
 
         {/* Desktop navigation */}
@@ -72,17 +70,11 @@ const Navbar = () => {
             type="button"
             onClick={toggleTheme}
             aria-label={
-              isDarkMode
-                ? "Switch to light mode"
-                : "Switch to dark mode"
+              isDarkMode ? "Switch to light mode" : "Switch to dark mode"
             }
             className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-slate-700 transition hover:border-blue-400 hover:text-blue-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:border-blue-400/40 dark:hover:text-blue-400"
           >
-            {isDarkMode ? (
-              <Sun size={18} />
-            ) : (
-              <Moon size={18} />
-            )}
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
           {/* Resume */}
@@ -103,38 +95,24 @@ const Navbar = () => {
             type="button"
             onClick={toggleTheme}
             aria-label={
-              isDarkMode
-                ? "Switch to light mode"
-                : "Switch to dark mode"
+              isDarkMode ? "Switch to light mode" : "Switch to dark mode"
             }
             className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-slate-700 transition dark:border-white/10 dark:bg-white/5 dark:text-slate-200"
           >
-            {isDarkMode ? (
-              <Sun size={18} />
-            ) : (
-              <Moon size={18} />
-            )}
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
           {/* Mobile menu button */}
           <button
             type="button"
-            onClick={() =>
-              setIsMenuOpen(!isMenuOpen)
-            }
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={
-              isMenuOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
+              isMenuOpen ? "Close navigation menu" : "Open navigation menu"
             }
             aria-expanded={isMenuOpen}
             className="rounded-lg p-2 text-slate-900 transition hover:bg-slate-100 dark:text-white dark:hover:bg-white/10"
           >
-            {isMenuOpen ? (
-              <X size={24} />
-            ) : (
-              <Menu size={24} />
-            )}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </nav>
