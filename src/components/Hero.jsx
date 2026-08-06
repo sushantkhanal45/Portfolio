@@ -23,7 +23,7 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
         >
           {/* Availability badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.15, duration: 0.5 }}
@@ -31,10 +31,10 @@ const Hero = () => {
           >
             <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500 dark:bg-emerald-400" />
 
-            {/* <span className="text-sm font-medium text-blue-700 dark:text-blue-200">
+            <span className="text-sm font-medium text-blue-700 dark:text-blue-200">
               Open to React.js Internship Opportunities
-            </span> */}
-          </motion.div>
+            </span>
+          </motion.div> */}
 
           {/* Introduction */}
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
@@ -44,6 +44,7 @@ const Hero = () => {
           {/* Name */}
           <h1 className="max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl dark:text-white">
             Sushant
+
             <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-violet-400">
               Khanal
             </span>
@@ -56,8 +57,8 @@ const Hero = () => {
 
           {/* Introduction */}
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-400">
-            I build responsive, user-focused, and modern web applications using
-            React.js, JavaScript, Tailwind CSS, and modern frontend
+            I build responsive, user-focused, and modern web applications
+            using React.js, JavaScript, Tailwind CSS, and modern frontend
             technologies.
           </p>
 
@@ -68,6 +69,7 @@ const Hero = () => {
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3.5 font-semibold text-white transition duration-300 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/20"
             >
               View My Work
+
               <ArrowDown
                 size={18}
                 className="transition-transform duration-300 group-hover:translate-y-1"
@@ -152,7 +154,9 @@ const Hero = () => {
 
           {/* TradeSphere badge */}
           <div className="absolute -bottom-3 -left-4 rounded-2xl border border-slate-200 bg-white/90 px-4 py-3 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0c1220]/90">
-            <p className="text-xs text-slate-500">Featured project</p>
+            <p className="text-xs text-slate-500">
+              Featured project
+            </p>
 
             <p className="mt-1 font-semibold text-violet-600 dark:text-violet-300">
               TradeSphere
