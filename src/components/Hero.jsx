@@ -56,9 +56,7 @@ const Hero = () => {
 
           {/* Introduction */}
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-400">
-            I build responsive, user-focused, and modern web applications using
-            React.js, JavaScript, Tailwind CSS, and modern frontend
-            technologies.
+            I build modern, responsive, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS while continuously expanding my backend development skills.
           </p>
 
           {/* Buttons */}
