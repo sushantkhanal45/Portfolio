@@ -133,7 +133,7 @@ const Navbar = () => {
             ))}
 
             <a
-              href="/resume.pdf"
+              href="/Sushant_Khanal_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               onClick={closeMenu}
