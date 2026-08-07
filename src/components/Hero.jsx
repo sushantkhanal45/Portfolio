@@ -56,7 +56,9 @@ const Hero = () => {
 
           {/* Introduction */}
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-400">
-            I build modern, responsive, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS while continuously expanding my backend development skills.
+            I build modern, responsive, and user-friendly web applications using
+            React.js, JavaScript, and Tailwind CSS while continuously learning
+            backend technologies to become a well-rounded full-stack developer.
           </p>
 
           {/* Buttons */}
@@ -106,7 +108,7 @@ const Hero = () => {
 
             {/* Email */}
             <a
-              href="skkhanal45@gmail.com"
+              href="mailto:skkhanal45@gmail.com"
               aria-label="Email"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition duration-300 hover:border-blue-400 hover:text-blue-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:shadow-none dark:hover:border-blue-400/40 dark:hover:text-blue-400"
             >
@@ -122,39 +124,61 @@ const Hero = () => {
           transition={{ delay: 0.25, duration: 0.7 }}
           className="relative hidden justify-center lg:flex"
         >
-          {/* Main card */}
-          <div className="relative flex h-80 w-80 items-center justify-center rounded-[2.5rem] border border-slate-200 bg-white/70 shadow-2xl shadow-blue-200/40 backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.03] dark:shadow-blue-950/30">
-            <div className="absolute inset-5 rounded-[2rem] border border-blue-500/10 dark:border-blue-400/10" />
+          {/* Main Card */}
+          <div className="relative flex h-96 w-96 items-center justify-center rounded-[2.8rem] border border-slate-200 bg-white/70 shadow-2xl shadow-blue-200/40 backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.03] dark:shadow-blue-950/30">
+            <div className="absolute inset-6 rounded-[2.2rem] border border-blue-500/10 dark:border-blue-400/10" />
 
             <div className="text-center">
-              <p className="text-7xl font-black text-blue-600 dark:text-blue-400">
+              <p className="text-8xl font-black text-blue-600 dark:text-blue-400">
                 &lt;/&gt;
               </p>
 
-              <p className="mt-5 text-sm font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">
-                React Developer
+              <p className="mt-6 text-base font-semibold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
+                Frontend Developer
               </p>
             </div>
           </div>
 
-          {/* React badge */}
-          <div className="absolute -right-3 top-10 rounded-2xl border border-slate-200 bg-white/90 px-4 py-3 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0c1220]/90">
-            <p className="text-xs text-slate-500 dark:text-slate-500">
-              Building with
+          {/* Tech Stack */}
+          <div className="absolute -right-8 top-6 rounded-2xl border border-slate-200 bg-white/90 px-6 py-5 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0c1220]/90">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+              Tech Stack
             </p>
 
-            <p className="mt-1 font-semibold text-blue-600 dark:text-blue-300">
-              React.js
-            </p>
+            <div className="mt-4 space-y-2">
+              <p className="font-semibold text-blue-600 dark:text-blue-300">
+                React.js
+              </p>
+
+              <p className="font-semibold text-blue-600 dark:text-blue-300">
+                Tailwind CSS
+              </p>
+
+              <p className="font-semibold text-blue-600 dark:text-blue-300">
+                Framer Motion
+              </p>
+            </div>
           </div>
 
-          {/* TradeSphere badge */}
-          <div className="absolute -bottom-3 -left-4 rounded-2xl border border-slate-200 bg-white/90 px-4 py-3 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0c1220]/90">
-            <p className="text-xs text-slate-500">Featured project</p>
-
-            <p className="mt-1 font-semibold text-violet-600 dark:text-violet-300">
-              TradeSphere
+          {/* Currently Learning */}
+          <div className="absolute -left-8 -bottom-8 rounded-2xl border border-slate-200 bg-white/90 px-6 py-5 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0c1220]/90">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+              Currently Learning
             </p>
+
+            <div className="mt-4 space-y-2">
+              <p className="font-semibold text-violet-600 dark:text-violet-300">
+                Node.js
+              </p>
+
+              <p className="font-semibold text-violet-600 dark:text-violet-300">
+                Express.js
+              </p>
+
+              {/* <p className="font-semibold text-violet-600 dark:text-violet-300">
+        MongoDB
+      </p> */}
+            </div>
           </div>
         </motion.div>
       </div>
