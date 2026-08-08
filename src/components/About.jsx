@@ -1,122 +1,141 @@
 import { motion } from "framer-motion";
-import { Code2, Layers3, Lightbulb } from "lucide-react";
 
 const About = () => {
-  const strengths = [
-    {
-      icon: <Code2 size={22} />,
-      title: "Clean Development",
-      description:
-        "Building organized, responsive, and maintainable web interfaces.",
-    },
-    {
-      icon: <Layers3 size={22} />,
-      title: "Component-Based UI",
-      description:
-        "Creating reusable React components for scalable frontend applications.",
-    },
-    {
-      icon: <Lightbulb size={22} />,
-      title: "Problem Solving",
-      description:
-        "Turning ideas and requirements into practical digital solutions.",
-    },
-  ];
-
   return (
     <section
       id="about"
-      className="scroll-mt-20 bg-white px-6 py-24 transition-colors duration-300 dark:bg-[#070b14] sm:py-32"
+      className="relative overflow-hidden bg-slate-50 px-6 py-24 dark:bg-[#080d18]"
     >
-      <div className="mx-auto max-w-7xl">
+      {/* Background glow */}
+      <div className="pointer-events-none absolute left-0 top-1/3 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl" />
+
+      <div className="relative mx-auto max-w-7xl">
         {/* Section heading */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl"
+          className="mb-14 text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
             About Me
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl dark:text-white">
-            Building ideas into
-            <span className="text-blue-600 dark:text-blue-400">
-              {" "}
-              meaningful experiences.
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
+            Building the web with{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+              creativity & purpose
             </span>
           </h2>
         </motion.div>
 
-        {/* Main content */}
-        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          {/* About description */}
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          {/* About content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-lg leading-8 text-slate-700 dark:text-slate-300">
-              I am an aspiring frontend developer with a strong interest in
-              building modern, responsive, and user-friendly web applications. I
-              enjoy working with React.js and turning ideas into clean,
-              functional digital experiences.
+            <p className="text-lg leading-8 text-slate-600 dark:text-slate-300">
+              I&apos;m Sushant Khanal, a Frontend Developer focused on building
+              modern, responsive, and user-friendly web applications with
+              React.js.
             </p>
 
             <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-400">
-              My experience developing TradeSphere, a smart online marketplace,
-              helped me strengthen my skills in frontend development, backend
-              integration, database management, search functionality, and
-              recommendation systems. I enjoy learning new technologies and
-              continuously improving the way I design and build applications.
+              I enjoy turning ideas into clean and interactive interfaces using
+              React.js, JavaScript, Tailwind CSS, HTML, and CSS. I focus on
+              creating reusable components, responsive layouts, and smooth user
+              experiences that work well across different devices.
             </p>
 
-            <a
-              href="#projects"
-              className="group mt-8 inline-flex items-center gap-2 font-semibold text-blue-600 transition duration-300 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Explore my projects
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
-                →
-              </span>
-            </a>
+            <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-400">
+              Alongside frontend development, I&apos;m expanding my backend
+              knowledge with Node.js and Express.js. I&apos;m also familiar with
+              PHP, MongoDB, MySQL, REST APIs, and JSON, allowing me to
+              understand and work across different parts of a web application.
+            </p>
+
+            <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-400">
+              Through projects such as <b>ExploreNepal, Expense Tracker, and the Swastik College website </b>, I&apos;ve
+              been developing practical experience in building real-world
+              applications and continuously improving my development skills.
+            </p>
           </motion.div>
 
-          {/* Strength cards */}
-          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            {strengths.map((strength, index) => (
-              <motion.article
-                key={strength.title}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.12,
-                }}
-                whileHover={{ y: -5 }}
-                className="group rounded-2xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:border-blue-400/50 hover:bg-white hover:shadow-lg hover:shadow-blue-100/60 dark:border-white/10 dark:bg-white/[0.03] dark:hover:border-blue-400/30 dark:hover:bg-white/[0.05] dark:hover:shadow-none"
-              >
-                {/* Icon */}
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 transition duration-300 group-hover:scale-110 dark:text-blue-400">
-                  {strength.icon}
-                </div>
+          {/* Skills / focus card */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-xl shadow-slate-200/40 backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.03] dark:shadow-blue-950/20"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">
+              What I Do
+            </p>
 
-                {/* Title */}
-                <h3 className="mt-5 font-semibold text-slate-950 dark:text-white">
-                  {strength.title}
+            <div className="mt-7 space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                  Frontend Development
                 </h3>
 
-                {/* Description */}
-                <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">
-                  {strength.description}
+                <p className="mt-2 leading-7 text-slate-600 dark:text-slate-400">
+                  Building responsive interfaces and reusable React.js
+                  components with a strong focus on clean UI and user
+                  experience.
                 </p>
-              </motion.article>
-            ))}
-          </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                  Modern Web Applications
+                </h3>
+
+                <p className="mt-2 leading-7 text-slate-600 dark:text-slate-400">
+                  Creating interactive applications with JavaScript, React.js,
+                  Tailwind CSS, state management, and API integration.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                  Growing Full-Stack Skills
+                </h3>
+
+                <p className="mt-2 leading-7 text-slate-600 dark:text-slate-400">
+                  Currently expanding my backend development skills with Node.js
+                  and Express.js while working with databases and server-side
+                  technologies.
+                </p>
+              </div>
+            </div>
+
+            {/* Tech tags */}
+            <div className="mt-8 flex flex-wrap gap-2">
+              {[
+                "React.js",
+                "JavaScript",
+                "Tailwind CSS",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "MySQL",
+                "PHP",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
