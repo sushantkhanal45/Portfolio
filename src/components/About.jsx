@@ -61,8 +61,8 @@ const About = () => {
           >
             <p className="text-lg leading-8 text-slate-700 dark:text-slate-300">
               I am an aspiring frontend developer with a strong interest in
-              building modern, responsive, and user-friendly web applications.
-              I enjoy working with React.js and turning ideas into clean,
+              building modern, responsive, and user-friendly web applications. I
+              enjoy working with React.js and turning ideas into clean,
               functional digital experiences.
             </p>
 
@@ -79,7 +79,6 @@ const About = () => {
               className="group mt-8 inline-flex items-center gap-2 font-semibold text-blue-600 transition duration-300 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
             >
               Explore my projects
-
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
