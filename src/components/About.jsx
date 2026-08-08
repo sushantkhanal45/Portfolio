@@ -60,9 +60,14 @@ const About = () => {
             </p>
 
             <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-400">
-              Through projects such as <b>ExploreNepal, Expense Tracker, and the Swastik College website </b>, I&apos;ve
-              been developing practical experience in building real-world
-              applications and continuously improving my development skills.
+              Through projects such as{" "}
+              <b>
+                ExploreNepal, Expense Tracker, and the Swastik College
+                website{" "}
+              </b>
+              , I&apos;ve been developing practical experience in building
+              real-world applications and continuously improving my development
+              skills.
             </p>
           </motion.div>
 
