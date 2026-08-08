@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-slate-50 px-6 pt-20 transition-colors duration-300 dark:bg-[#070b14]"
+      className="relative flex min-h-screen items-center overflow-x-hidden bg-slate-50 px-6 py-20 transition-colors duration-300 dark:bg-[#070b14]"
     >
       {/* Background glow effects */}
       <div className="pointer-events-none absolute inset-0">
