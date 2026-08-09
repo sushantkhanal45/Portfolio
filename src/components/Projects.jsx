@@ -55,7 +55,8 @@ const Projects = () => {
         "Dynamic section visibility",
         "CMS-driven content management",
       ],
-      github: "https://github.com/sujalshrestha01/SwastikCollege-Official-Website.git",
+      github:
+        "https://github.com/sujalshrestha01/SwastikCollege-Official-Website.git",
       demo: "https://swastik-college-official-website.vercel.app/",
     },
   ];
