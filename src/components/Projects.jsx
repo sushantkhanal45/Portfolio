@@ -21,8 +21,8 @@ const Projects = () => {
         "Favorites functionality",
         "Weather API integration",
       ],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/sushantkhanal45/ExploreNepal-React-App.git",
+      demo: "https://explore-nepal-react-app.vercel.app",
     },
 
     {
@@ -38,8 +38,8 @@ const Projects = () => {
         "Category-based organization",
         "Responsive user interface",
       ],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/sushantkhanal45/Expense-Tracker.git",
+      demo: "https://expense-tracker-mu-mauve-10.vercel.app/",
     },
 
     {
@@ -55,8 +55,8 @@ const Projects = () => {
         "Dynamic section visibility",
         "CMS-driven content management",
       ],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/sujalshrestha01/SwastikCollege-Official-Website.git",
+      demo: "https://swastik-college-official-website.vercel.app/",
     },
   ];
 
