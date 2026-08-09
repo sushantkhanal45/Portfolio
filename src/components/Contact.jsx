@@ -51,7 +51,7 @@ const Contact = () => {
         },
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
+        },
       );
 
       setStatus("success");
@@ -73,7 +73,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="scroll-mt-20 bg-slate-100 px-6 py-24 transition-colors duration-300 dark:bg-[#0a0f1c] sm:py-32"
+      className="relative bg-slate-50 px-6 py-20 transition-colors duration-300 dark:bg-[#070b14] sm:py-24"
     >
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
@@ -84,7 +84,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600 dark:text-blue-400">
             Let&apos;s Connect
           </p>
 
@@ -94,13 +94,13 @@ const Contact = () => {
 
           <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-400">
             I&apos;m open to React.js internship opportunities, frontend
-            projects, collaborations, and exciting ideas. Send me a message,
-            and I&apos;ll get back to you as soon as possible.
+            projects, collaborations, and exciting ideas. Send me a message, and
+            I&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
         {/* Contact content */}
-        <div className="mt-14 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="mt-12 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           {/* Left contact information */}
           <motion.div
             initial={{ opacity: 0, x: -25 }}
@@ -114,14 +114,14 @@ const Contact = () => {
             </h3>
 
             <p className="mt-4 leading-8 text-slate-600 dark:text-slate-400">
-              Have an internship opportunity, a frontend project, or an idea
-              you would like to collaborate on? Feel free to send me a message.
+              Have an internship opportunity, a frontend project, or an idea you
+              would like to collaborate on? Feel free to send me a message.
             </p>
 
             {/* Email */}
             <a
-              href="mailto:YOUR_EMAIL@gmail.com"
-              className="group mt-9 flex items-center gap-4"
+              href="mailto:skkhanal45@gmail.com"
+              className="group mt-8 flex items-center gap-4"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 transition duration-300 group-hover:scale-105 dark:text-blue-400">
                 <Mail size={21} />
@@ -133,7 +133,7 @@ const Contact = () => {
                 </p>
 
                 <p className="mt-1 font-medium text-slate-900 transition group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
-                  YOUR_EMAIL@gmail.com
+                  skkhanal45@gmail.com
                 </p>
               </div>
             </a>
@@ -150,7 +150,7 @@ const Contact = () => {
                 </p>
 
                 <p className="mt-1 font-medium text-slate-900 dark:text-white">
-                  Nepal
+                  Bhaktapur, Nepal
                 </p>
               </div>
             </div>
@@ -162,8 +162,9 @@ const Contact = () => {
               </p>
 
               <div className="mt-4 flex gap-3">
+                {/* GitHub */}
                 <a
-                  href="https://github.com/YOUR_GITHUB_USERNAME"
+                  href="https://github.com/sushantkhanal45"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
@@ -172,8 +173,9 @@ const Contact = () => {
                   <FaGithub size={19} />
                 </a>
 
+                {/* LinkedIn */}
                 <a
-                  href="YOUR_LINKEDIN_URL"
+                  href="https://www.linkedin.com/in/sushantkhanal45/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
@@ -285,8 +287,10 @@ const Contact = () => {
               <div className="mt-6 flex items-center gap-3 rounded-xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-700 dark:text-emerald-300">
                 <CheckCircle2 size={19} />
 
-                Your message was sent successfully. Thank you for reaching
-                out!
+                <span>
+                  Your message was sent successfully. Thank you for reaching
+                  out!
+                </span>
               </div>
             )}
 
@@ -295,8 +299,10 @@ const Contact = () => {
               <div className="mt-6 flex items-center gap-3 rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-700 dark:text-red-300">
                 <XCircle size={19} />
 
-                The message could not be sent. Please try again or contact me
-                directly by email.
+                <span>
+                  The message could not be sent. Please try again or contact me
+                  directly by email.
+                </span>
               </div>
             )}
 
