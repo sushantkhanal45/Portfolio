@@ -1,4 +1,3 @@
-// HMR = Hot Module Replacement
 import { useEffect } from "react";
 
 import About from "./components/About.jsx";
@@ -12,6 +11,16 @@ import Skills from "./components/Skills.jsx";
 function App() {
   useEffect(() => {
     window.history.scrollRestoration = "manual";
+
+    // Remove #skills, #projects, #about, etc. from the URL
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search,
+      );
+    }
+
     window.scrollTo(0, 0);
 
     return () => {
@@ -28,19 +37,19 @@ function App() {
           <Hero />
         </section>
 
-        <section id="about" className="-mt-10 sm:-mt-12">
+        <section id="about">
           <About />
         </section>
 
-        <section id="skills" className="-mt-8 sm:-mt-10">
+        <section id="skills">
           <Skills />
         </section>
 
-        <section id="projects" className="-mt-8 sm:-mt-10">
+        <section id="projects">
           <Projects />
         </section>
 
-        <section id="contact" className="-mt-8 sm:-mt-10">
+        <section id="contact">
           <Contact />
         </section>
       </main>
