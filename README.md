@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built with **React.js**, **Tailw
 
 ## 🌐 Live Demo
 
-sushant-khanal.com.np
+[sushant-khanal.com.np](https://www.sushant-khanal.com.np/)
 
 ## ✨ Features
 
