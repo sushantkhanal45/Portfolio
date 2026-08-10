@@ -1,25 +1,26 @@
-Sushant Khanal | Portfolio
+# Sushant Khanal | Portfolio
 
 A modern, responsive personal portfolio website built with **React.js**, **Tailwind CSS**, and **Framer Motion**. It showcases my projects, technical skills, and frontend development work while providing an easy way for recruiters, collaborators, and potential clients to contact me.
 
- 🌐 Live Demo
+## 🌐 Live Demo
 
-> LINK HERE_left
+sushant-khanal.com.np
 
-✨ Features
+## ✨ Features
 
 - Modern and responsive user interface
 - Dark and light mode
 - Smooth scrolling navigation
-- Smooth animations using Framer Motion
-- Responsive design for desktop, tablet, and mobile
-- Project showcase
+- Interactive animations using Framer Motion
+- Responsive layout for desktop, tablet, and mobile
+- Project showcase with project links
 - Technical skills section
 - EmailJS-powered contact form
 - GitHub, LinkedIn, and email links
 - Reusable React components
+- Custom favicon and page title
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - React.js
 - JavaScript
@@ -30,7 +31,7 @@ A modern, responsive personal portfolio website built with **React.js**, **Tailw
 - Lucide React
 - React Icons
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```text
 sushant-portfolio/
